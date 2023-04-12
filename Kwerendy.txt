@@ -1,0 +1,11 @@
+zapytanie 1
+SELECT id,imie nazwisko,rok_urodzenia,zdjecie FROM osoby limit 30;
+
+zapytanie 2
+SELECT imie,nazwisko,rok_urodzenia,opis,zdjecie FROM osoby INNER JOIN hobby ON osoby.id=hobby.id WHERE osoby.id="10";
+
+zapytanie 3
+SELECT AVG(rok_urodzenia),MIN(rok_urodzenia), MAX(rok_urodzenia) FROM osoby
+
+zapytanie 4
+UPDATE osoby SET opis='hobby' WHERE Hobby_id=4
